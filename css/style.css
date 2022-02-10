@@ -1,0 +1,373 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+	/*font-family: 'Dancing Script', cursive;*/
+}
+
+html, body{
+
+	height: 100%;
+	
+}
+/*div gerais*/
+.container{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.clear{
+	clear: both;
+}
+/********/
+
+.lado-esquerdo{
+	position: fixed;
+	z-index: 1;
+	float: left;
+
+	width: 40%;
+	height: 100%;
+	background-color: rgb(50, 50, 50);
+}
+
+.lado-esquerdo header h2{
+	font-family: 'Cairo', sans-serif;
+	margin-left: 200px;
+	margin: 70px;
+	color: white;
+	
+}
+
+.frase{
+	
+	width: 650px;
+	
+}
+
+
+.lado-esquerdo .frase h1{
+	z-index: 999;
+	font-size: 78px;
+	margin: 0 80px;
+	margin-top: 150px;
+	color: rgb(29, 236, 214);
+	font-family: 'Dancing Script', cursive;
+	
+}
+.lado-esquerdo h3{
+
+	font-family: 'Cairo', sans-serif;
+	color: white;
+	margin-left: 100px;
+	
+}
+
+.lado-esquerdo input{
+	font-family: 'Cairo', sans-serif;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-top: 60px;
+	width: 200px;
+	height: 80px;
+	background-color: rgb(50, 50, 50);
+	display: inline-block;
+	text-align: center;
+	color: white;
+	border: 1px solid #ccc;
+	font-size: 30px;
+	cursor: pointer;
+}
+
+.lado-esquerdo input:hover{
+	transition: 0.3s;
+	background-color: rgb(100,100,100);
+}
+
+.lado-esquerdo .redes-sociais{
+	
+	position: absolute;
+	top: 85%;
+	width: 100%;
+	display: block;
+	color: #ccc;
+	text-align: center;
+	
+
+	font-size: 30px;
+}
+
+.lado-esquerdo .redes-sociais div{
+	width: 100%;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	
+
+	text-align: center;
+
+}
+
+.lado-esquerdo .redes-sociais i{
+
+	margin-left: 10px;
+	cursor: pointer;
+
+}
+
+.lado-direito{
+	width: 48%;
+	margin-left: 40%;
+	height: 100%;
+	float: left;
+	
+}
+
+.lado-direito .img-perfil{
+	
+	background-image: url("../img/mulher.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+	background-position: top;
+	
+	width: 100%;
+	padding-top: 80%;
+	z-index: 0;
+
+}
+
+.lado-direito .texto {
+
+	
+	margin: 40px;
+
+	
+}
+
+.lado-direito .texto h4{
+	font-family: 'Dancing Script', cursive;
+	margin-bottom: 10px;
+
+
+	
+}
+
+.lado-direito .texto p{
+	font-family: 'Cairo', sans-serif;
+
+}
+
+.sidebar{
+	float: right;
+
+	display: inline-block;
+	z-index: 0;
+	position: fixed;
+	top: 0;	
+	right: 0;
+	
+	width: 12%;
+	height: 100%;
+	background-color: rgb(29, 236, 214);
+}
+
+.sidebar li{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	font-family: 'Cairo', sans-serif;
+	list-style-type: none;
+	text-align: center;
+	
+}
+
+
+.sidebar li ul{
+	margin-top: 70px;
+	cursor: pointer;
+}
+
+.sidebar li ul:first-child{
+	margin-top: 0px;
+}
+
+footer{
+	display: none;
+}
+
+
+@media screen and (max-width: 920px){
+
+
+	html, body{
+
+		height: 100%;
+	
+	}
+
+	body{
+
+		position: absolute;
+		top: 0;
+	}
+	.lado-esquerdo{
+		position: absolute;
+		top: 0;
+		z-index: 1;
+		float: none;
+
+		width: 100%;
+		height: 90px;
+		background-color: rgb(50, 50, 50);
+	}
+
+	.frase{
+	
+		width: 100%;
+	
+	}
+
+	.lado-esquerdo .frase h1{
+		z-index: 999;
+		font-size: 32px;
+		text-align: center;
+		margin-top: 10px;
+			
+	
+	}
+
+	.lado-esquerdo h3 {
+
+		display: none;
+	
+	}
+
+	.lado-esquerdo h2{
+		display: none;
+	}
+
+	.lado-esquerdo input{
+		display: none;
+	}
+
+	.lado-esquerdo .redes-sociais{
+	
+		position: relative;
+		top: 5px;
+		width: 100%;
+		
+		text-align: center;
+		
+
+		font-size: 20px;
+	}
+
+	.sidebar{
+		float: none;
+
+		display: block;
+		z-index: 0;
+		position: absolute;
+		
+		margin-top: 90px;
+		width: 100%;
+		height: 50px;
+		background-color: rgb(29, 236, 214);
+	}
+
+	.sidebar li{
+
+		
+		font-family: 'Cairo', sans-serif;
+		list-style-type: none;
+		text-align: center;
+	
+	}
+
+	.sidebar li ul{
+		margin-left: 10px;
+		display: inline-block;
+		margin-top: 0;
+		
+		cursor: pointer;
+		
+
+	}
+
+	.lado-direito{
+
+		width: 100%;
+		height: auto;
+		margin-left: 0px;
+		margin-top: 140px;
+		float: none;
+	
+	}
+
+.lado-direito .img-perfil{
+	
+	background-image: url("../img/mulher.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+	background-position: top;
+	
+	width: 100%;
+	padding-top: 60%;
+	z-index: 0;
+
+}
+
+.lado-direito .texto {
+
+	
+	margin-top: 40px;
+	padding-bottom: 40px;
+
+	
+}
+
+.lado-direito .texto h4{
+	font-family: 'Dancing Script', cursive;
+	margin-bottom: 10px;
+
+
+	
+}
+
+.lado-direito .texto p{
+	font-family: 'Cairo', sans-serif;
+
+}
+
+footer{
+
+	width: 100%;
+	padding: 5px;
+	
+	display: block;
+	background-color: black;
+}
+
+footer h2{
+	font-family: 'Cairo', sans-serif;
+	text-align: center;
+	color: white;
+	
+}
+
+}
+
+@media screen and (max-width: 365px){
+
+	.lado-esquerdo .frase h1{
+	
+		font-size: 23px;
+		
+			
+	
+	}
+}
